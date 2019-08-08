@@ -23,9 +23,9 @@ Output is stored in output_chr1.wig. Additional options can be found within wind
 The peak_call.py method then takes a WIG file produced by window_score.py and outputs a mapping consisting of the probable locations of nucleosomes in BED format.
 
 To run peak_call.py:
-'''bash
+```bash
 python peak_call.py input_wig.wig > output_bed.bed
-'''
+```
 
 Please ensure that you specify a wig file as the input.
 
