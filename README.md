@@ -6,15 +6,15 @@ This repository contains code for the detection and position mapping of nucleoso
 The "window_score.py" file takes a BAM file as input and outputs a WIG file containing scores for each base pair position along the reference genome, for the chromosome specified by the BAM file.
 
 Currently, window_score.py only supports one chromosome at a time, so use samtools, i.e.
-'''bash
+```bash
 samtools view -b in.bam 1 > in_chr1.bam
-'''
+```
 would generate a new bam file with only data from chromosome 1.
 
 window_score.py can then be called:
-'''bash
+```bash
 python window_score.py input_BAM_chr1.bam -f output_chr1.wig
-'''
+```
 
 Output is stored in output_chr1.wig. Additional options can be found within window_score.py
 
